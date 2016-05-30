@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     			font-weight: 400;
     			letter-spacing: 1px;
     			color: white;
+          -webkit-text-stroke: 0.6px @brand-primary;
     			&:hover,
     			&:focus {
     				color: @brand-primary;
@@ -172,14 +173,16 @@ header {
 	.intro-text {
 		padding-top: 100px;
 		padding-bottom: 50px;
-		.intro-lead-in {
-			.serif-font;
-			font-style: italic;
-			font-size: 22px;
-			line-height: 22px;
-			margin-bottom: 25px;
-		}
-		.intro-heading {
+    .intro-lead-in {
+      -webkit-text-stroke: 0.8px @brand-primary;
+      .serif-font;
+      font-style: italic;
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+    .intro-heading {
+      -webkit-text-stroke: 1px @brand-primary;
 			.heading-font;
 			font-weight: 700;
 			font-size: 50px;
