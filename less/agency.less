@@ -84,14 +84,14 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: @gray-darkest;
 	border-color: transparent;
 	.navbar-brand {
-		color: @brand-primary;
+		color: white;
 		.script-font;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-        	color: darken(@brand-primary, 10%);
-        }
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+    	color: darken(@brand-primary, 10%);
+    }
 	}
 	.navbar-collapse {
 		border-color: fade(white, 2%);
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
     			.heading-font;
     			font-weight: 400;
     			letter-spacing: 1px;
-    			color: @brand-primary;
+    			color: white;
     			&:hover,
     			&:focus {
     				color: @brand-primary;
@@ -137,16 +137,25 @@ h1, h2, h3, h4, h5, h6 {
 @media(min-width:768px) {
   .navbar-default {
   	background-color: transparent;
-      padding: 25px 0;
-      -webkit-transition: padding 0.3s;
-      -moz-transition: padding 0.3s;
-      transition: padding 0.3s;
-      border: none;
+    color: @brand-primary;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
     .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
+      color: @brand-primary;
+      font-size: 2em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .nav {
+      li {
+        a {
+          color: @brand-primary;
+        }
+      }
     }
 		.navbar-nav>.active>a {
 			border-radius: 3px;
@@ -155,18 +164,18 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-default.navbar-shrink {
   	background-color: @gray-darkest;
     padding: 10px 0;
+    color: white;
+	  .navbar-brand {
+      color: white;
+      font-size: 1.5em;
+	  }
     .nav {
       li {
         a {
           color: white;
         }
       }
-    }
-    color: white;
-	  .navbar-brand {
-      color: white;
-      font-size: 1.5em;
-	  }   
+    }   
 	}
 }
 
@@ -242,7 +251,7 @@ section {
 
 @media(min-width:768px) {
 	section {
-		padding: 50px 0;
+		padding: 80px 0;
 	}
 }
 
@@ -485,17 +494,22 @@ body {
   overflow: hidden;
 }
 
+.location-list {
+  padding-top: 40px;
+}
+
 .location-item {
   margin-bottom: 40px;
 }
 
 // Header phone
 .header-phone {
-  color: @brand-primary !important;
-  font-size: 22px;
-  line-height: 22px;
+  color: white !important;
+  font-size: 16px;
+  line-height: 18px;
 
   a {
+    color: white;
     text-decoration: none;
   }
 }
