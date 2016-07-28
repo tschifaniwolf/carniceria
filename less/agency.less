@@ -1,10 +1,19 @@
 @import "variables.less";
 @import "mixins.less";
+@import "flags.less";
 
 // Global Components
 
+html {
+	background-color: @gray-darkest;
+}
+
 body {
+	background-color: white;
 	overflow-x: hidden;
+	margin-top: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
 	.body-font;
 }
 
@@ -19,6 +28,7 @@ body {
 p {
 	font-size: 14px;
 	line-height: 1.75;
+	color: @gray;
 }
 
 p.large {
@@ -116,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     			color: white;
     			&:hover,
     			&:focus {
-    				color: @brand-primary;
+    				color: white;
     				outline: none;
     			}
     		}
@@ -144,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: padding 0.3s;
     border: none;
     .navbar-brand {
-      color: @brand-primary;
+      color: white;
       font-size: 2em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -153,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
       li {
         a {
-          color: @brand-primary;
+          color: white;
         }
       }
     }
@@ -175,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
           color: white;
         }
       }
-    }   
+    }
 	}
 }
 
@@ -198,6 +208,7 @@ header {
       margin-bottom: 25px;
     }
     .intro-heading {
+			display: inline-block;
 			.heading-font;
 			font-weight: 700;
 			font-size: 50px;
@@ -210,7 +221,7 @@ header {
 @media(min-width:768px) {
 	header {
 		.intro-text {
-			padding-top: 300px;
+			padding-top: 200px;
 			padding-bottom: 200px;
 			.intro-lead-in {
 				.serif-font;
@@ -233,7 +244,7 @@ header {
 // Global Section Styles
 
 section {
-    padding: 50px 0;
+    padding: 200px 0 0 0;
     h2.section-heading {
 		font-size: 40px;
 		margin-top: 0;
@@ -251,7 +262,7 @@ section {
 
 @media(min-width:768px) {
 	section {
-		padding: 80px 0;
+		padding: 150px 0 0 0;
 	}
 }
 
@@ -272,7 +283,7 @@ section {
             display: block;
             position: relative;
             max-width: 400px;
-            margin: 0 auto;            
+            margin: 0 auto;
         }
     }
     * {
@@ -329,7 +340,7 @@ section#contact {
 	   font-weight: 700;
 	   color: @placeholder-text;
 	}
-	:-ms-input-placeholder {  
+	:-ms-input-placeholder {
 	   .heading-font;
 	   font-weight: 700;
 	   color: @placeholder-text;
@@ -454,8 +465,8 @@ ul.social-buttons {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
     	opacity: 0;
@@ -504,12 +515,12 @@ body {
 
 // Header phone
 .header-phone {
-  color: white !important;
+  color: @gray-lighter !important;
   font-size: 16px;
   line-height: 18px;
 
   a {
-    color: white;
+    color: @gray-lighter;
     text-decoration: none;
   }
 }

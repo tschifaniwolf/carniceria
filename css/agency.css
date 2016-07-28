@@ -4,9 +4,37 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+.flag-icon.flag-icon-ar {
+  background-image: url(/less/ar.svg);
+}
+.flag-icon.flag-icon-it {
+  background-image: url(/less/it.svg);
+}
+html {
+  background-color: #222222;
+}
 body {
+  background-color: white;
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
 }
 .text-muted {
   color: #777777;
@@ -17,6 +45,7 @@ body {
 p {
   font-size: 14px;
   line-height: 1.75;
+  color: #777777;
 }
 p.large {
   font-size: 16px;
@@ -43,7 +72,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -51,7 +80,7 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #f7f7f7;
+  background-color: #dddddd;
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -60,7 +89,7 @@ h6 {
   color: #ffffff;
   background-color: #7d0303;
   border-color: #7d0303;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -104,7 +133,7 @@ fieldset[disabled] .btn-primary.active {
   color: #ffffff;
   background-color: #7d0303;
   border-color: #7d0303;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
@@ -176,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #7d0303;
 }
 .navbar-default .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
@@ -184,7 +213,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-  color: #7d0303;
+  color: white;
   outline: none;
 }
 .navbar-default .navbar-nav > .active > a {
@@ -208,14 +237,14 @@ fieldset[disabled] .btn-xl.active {
     border: none;
   }
   .navbar-default .navbar-brand {
-    color: #7d0303;
+    color: white;
     font-size: 2em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   .navbar-default .nav li a {
-    color: #7d0303;
+    color: white;
   }
   .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;
@@ -257,7 +286,8 @@ header .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
@@ -266,7 +296,7 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
@@ -277,7 +307,7 @@ header .intro-text .intro-heading {
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 75px;
@@ -286,7 +316,7 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 50px 0;
+  padding: 200px 0 0 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -303,7 +333,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 80px 0;
+    padding: 150px 0 0 0;
   }
 }
 .service-heading {
@@ -354,27 +384,27 @@ section#contact .form-control:focus {
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbbbbb;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbbbbb;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbbbbb;
 }
 section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbbbbb;
@@ -388,14 +418,14 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   text-transform: none;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "TimesNewRoman", "Times New Roman", Times, Georgia, serif;
   text-transform: uppercase;
   text-transform: none;
 }
@@ -525,11 +555,11 @@ body {
   margin-bottom: 40px;
 }
 .header-phone {
-  color: white !important;
+  color: #dddddd !important;
   font-size: 16px;
   line-height: 18px;
 }
 .header-phone a {
-  color: white;
+  color: #dddddd;
   text-decoration: none;
 }
