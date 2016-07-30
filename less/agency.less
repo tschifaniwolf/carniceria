@@ -190,14 +190,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
-	background-repeat: none;
-	background-attachment: scroll;
-	background-position: center center;
-	.background-cover;
-	text-align: center;
-	color: white;
+	position: relative;
+	margin-bottom: 700px;
+	.background-image {
+		position: absolute;
+	  left: 0;
+	  right: 0;
+	  z-index: 1;
+		width: 100%;
+		height: 700px;
+		background-image: url('../img/header-bg.jpg');
+		background-repeat: none;
+		background-attachment: scroll;
+		background-position: center center;
+		.background-blur(3px);
+		.background-cover;
+	}
 	.intro-text {
+		position: absolute;
+	  left: 0;
+	  right: 0;
+	  z-index: 10;
+		text-align: center;
+		color: white;
 		padding-top: 100px;
 		padding-bottom: 50px;
     .intro-lead-in {
